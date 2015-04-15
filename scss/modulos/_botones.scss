@@ -1,0 +1,22 @@
+@mixin boton {
+	color: $gris-oscuro;
+	background: #fff;
+	border         : 1px solid;
+	display        : inline-block;
+	line-height    : 2.5;
+	padding        : 0 1em;
+	text-transform : uppercase;
+
+	&:hover {
+		color: $azul;
+		text-decoration: none !important;
+	}
+
+	&__flecha {
+		margin-left : .5em;
+	}
+}
+
+.boton{
+	@include boton;
+}

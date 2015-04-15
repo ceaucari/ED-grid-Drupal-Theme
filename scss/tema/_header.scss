@@ -1,0 +1,27 @@
+body {
+	padding-top: 50px;
+}
+
+#header{
+	background    : $azul;
+	border-bottom : 1px solid $azul-oscuro;
+	height        : 50px;
+	line-height   : 50px;
+	position      : fixed;
+	top           : 0;
+	width         : 100%;
+	z-index       : 900;
+
+	body.logged-in & {
+		top: 30px;
+	}
+
+	@include desde(web){
+		background: rgba($azul,.95);
+	}
+}
+
+.logo {
+	height: 32px;
+	margin: 9px 0;
+}

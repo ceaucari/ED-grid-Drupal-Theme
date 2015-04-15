@@ -1,0 +1,11 @@
+name                    = DispollHyC (creado por Escuela Digital)
+core                    = 7.x
+
+;stylesheets[all][]      = css/mis-estilos.css
+
+
+regions[pre-content]    = Pre Content
+regions[content]        = Content
+regions[sidebar_first]  = Left Sidebar
+regions[sidebar_second] = Right Sidebar
+regions[post-content]   = Post Content

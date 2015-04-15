@@ -1,0 +1,115 @@
+.section-title{
+	border-bottom: 1px solid rgba($azul-oscuro,.3);
+	font-size: 1.4em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 1em 0;
+}
+
+.section-subtitle {
+	text-align: center;
+}
+
+.imagen-marco {
+	border: 1px solid rgba($gris,.3);
+	background: #fff;
+	padding: 3px;
+	box-shadow: 0 2px 2px -2px #000;
+}
+
+// Video responsive
+.video-youtube {
+	position    : relative;
+	width       : 100%;
+	height      : 0;
+	overflow    : hidden;
+	padding-top : 56.25%;
+	margin      : 1em 0;
+
+	iframe {
+		position : absolute;
+		top      : 0;
+		left     : 0;
+		width    : 100%;
+		height   : 100%;
+	}
+}
+
+li.icon-check {
+	list-style   : none !important;
+	position     : relative;
+	padding-left : 1em;
+	margin       : 0 !important;
+
+	&:before {
+		margin-right : .5em;
+		position     : absolute;
+		left         : -.5em;
+		top          : 6px;
+	}
+}
+
+
+// Botones sociales en los nodos
+.easy_social_box {
+	@include hasta(tablet){
+		display: none;
+	}
+	@include desde(tablet){
+		padding-top: 2em;
+	}
+}
+
+// paginador de las vistas
+ul.pager {
+	text-align  : center;
+	opacity     : .8;
+	padding-top : 2em;
+
+	li {
+		float       : none;
+		display     : inline-block !important;
+		margin      : 0 !important;
+		padding     : .5em !important;
+		line-height : 24px;
+		color       : $azul; 
+	}
+
+	a {
+		display     : block;
+		line-height : 24px;
+		background  : #fff;
+		border      : 1px solid $azul;
+		border-radius: 2px;
+		font-size: .9em;
+		padding     : 0 .5em;
+
+		&:hover {
+			background      : $azul;
+			color           : $blanco;
+			text-decoration : none !important;
+		}
+	}
+}
+
+// Widget
+.widget {
+	background    : #fff;
+	display       : block;
+	overflow      : hidden;
+	border-radius : 3px;
+	padding       : 1em;
+	box-shadow    : 0 0 0 1px #ddd,
+				    0 2px 2px -1px #777;
+	line-height   : 1.5;
+
+	@include desde(tablet){
+		&.node {
+			padding: 2em;
+		}
+	}
+}
+
+.block-disqus .contextual-links {
+	display: none;
+}

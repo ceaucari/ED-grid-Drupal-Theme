@@ -1,0 +1,33 @@
+input, textarea {
+	max-width : 100%;
+	padding-left: 1em;
+}
+
+form {
+	// background: $body--background;
+	// border: 1px solid #ccc;
+	margin: 2em auto 1em;
+	font-size: .9em;
+	// padding: 1em;
+	// max-width: 90%;
+}
+
+label {
+	font-weight : normal;
+	margin-top: 0;
+	margin-bottom: .3em;
+}
+
+input, textarea {
+	background : #fff;
+	border     : 1px solid #ccc;
+	box-shadow : none;
+}
+
+input {
+	line-height: 1.7;
+}
+
+.form-item {
+	margin-top: 0;
+}

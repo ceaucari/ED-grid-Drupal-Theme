@@ -1,0 +1,28 @@
+// Librerias y variables
+	@import "base/variables";
+	@import "librerias/normalize";
+	@import "librerias/ed-grid/ed-grid";
+	@import "librerias/ed-menu";
+
+// Base
+	@import "base/base";
+
+// Layout
+	@import "layout/content-sidebar";
+
+// Modulos. Los estilos propios construidos para el proyecto
+	@import "modulos/botones";
+	@import "modulos/modulos";
+	@import "modulos/sociales";
+	@import "modulos/icons";
+	@import "modulos/sidebar-menu";
+
+// Tema. Los componentes básicos de todo proyecto
+	@import "tema/menus";
+	@import "tema/formularios";
+	@import "tema/imagenes";
+	@import "tema/header";
+	@import "tema/footer";
+	@import "tema/content";
+	@import "tema/sidebar";
+	@import "tema/breadcrumb";
