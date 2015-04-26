@@ -1,9 +1,13 @@
-name                    = DispollHyC (creado por Escuela Digital)
+name                    = Tema base (creado por Escuela Digital)
 core                    = 7.x
 
-;stylesheets[all][]      = css/mis-estilos.css
+; CSS
+stylesheets[all][]      = css/estilos.css
 
+; JavaScript
+scripts[] = js/scripts.js
 
+; Regiones
 regions[pre-content]    = Pre Content
 regions[content]        = Content
 regions[sidebar_first]  = Left Sidebar

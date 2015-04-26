@@ -1,21 +1,16 @@
 //Modifique los estilos base desde las variables
 	body {
 		background  : $body--background;
-		font-family : $body--font-family !important;
+		font-family : $body--font-family;
 		color       : $body--color;
 	}
 
 	a {
 		color           : $link--color;
-		text-decoration : none;
 
 		&:hover {
-			// color : darken($link--color,10%);
+			
 		}
-	}
-
-	ul {
-		padding-left: $caja--separacion / 2;
 	}
 
 	p, blockquote, li {
@@ -25,6 +20,11 @@
 
 	p {
 		margin : 0 0 $p--margin 0;
+
+		&:last-child,
+		&:only-child {
+			margin: 0;
+		}
 	}
 
 	blockquote {
@@ -41,18 +41,8 @@
 
 // Tamaños y estilos de los encabezados:
 	h1 { 
-		font-size : $h1--font-size * 0.75; 
-		line-height: 1;
-		margin: 0 0 .5em;
-		padding-bottom: .5em;
-
-		@include desde(tablet){
-			font-size : $h1--font-size; 
-		}
-
-		.front & {
-			display: none;
-		}
+		font-size : $h1--font-size; 
+		line-height: 1.2;
 	}
 
 	h2 { 
@@ -61,9 +51,6 @@
 
 	h3 { 
 		font-size : $h3--font-size; 
-		font-weight: bold;
-		margin: 1.5em 0 0;
-		color: rgba($negro,.8);
 	}
 
 	h4 { 
@@ -76,9 +63,4 @@
 
 	h6 { 
 		font-size : $h6--font-size;
-	}
-
-// División de las secciones
-	section {
-		padding-bottom: 2em;	
 	}

@@ -50,17 +50,14 @@
   <?php print $head; ?>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php print $head_title; ?></title>
-  <!--Este tema incluye los estilos de Drupal al pie de la página para acelerar la carga
-  Los estilos propios del tema deben incluirse aqui con el método tradicional (link)-->
-  <link rel="stylesheet" type="text/css" href="/sites/proyecto.dispollhyc.com/themes/dispollhyc/css/estilos.css">
+  <?php print $styles; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <?php print $scripts; ?>
-  <?php print $styles; ?>
-  <!-- Icon Fonts -->
+  <!-- Icon Fonts ED 2015 de Fontastic-->
   <link rel="stylesheet" type="text/css" href="https://fontastic.s3.amazonaws.com/Wz39KRrwmkmXejbUxAuYt7/icons.css">
   <!-- / Icon Fonts -->
 </body>
