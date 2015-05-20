@@ -57,8 +57,5 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <?php print $scripts; ?>
-  <!-- Icon Fonts ED 2015 de Fontastic-->
-  <link rel="stylesheet" type="text/css" href="https://fontastic.s3.amazonaws.com/Wz39KRrwmkmXejbUxAuYt7/icons.css">
-  <!-- / Icon Fonts -->
 </body>
 </html>
